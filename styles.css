@@ -1,0 +1,67 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import the "Inter" font if not already done */
+/* You should replace 'url()' with the correct path to your font file */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    height: auto;
+    max-height: 60px; /* Adjust the maximum height as needed */
+}
+
+/* Menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif; /* Use the imported font */
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

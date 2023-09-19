@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:rgb(245,245,245);">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+
+  <title>test</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
+  <link rel="stylesheet"
+        href="styles.css">
+
+  <script src="the.js"></script>
+
+  <!--react stuff-->
+<!--  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>-->
+<!--  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>-->
+<!--  <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>-->
+</head>
+<body style="padding:0;margin:0;">
+<div class="panel1-borderless" style="display:flex;flex-wrap:wrap">
+  <div class="panel1 underline">
+    <iframe id="iframe1" src="https://tdsb.elearningontario.ca" height="500px" width="1000px"></iframe>
+  </div>
+  <div class="panel1-borderless">
+    <button onclick="curlTheUrl()">curl the url</button>
+  </div>
+  <div class="panel1-borderless">
+    <p id="result"></p>
+  </div>
+  <div class="panel1-borderless">
+    <h2>adskjf</h2>
+    <p id="asdfjkl">?</p>
+    <p id="asdfjkl2">??</p>
+    <script>
+      window.addEventListener("mousemove", (event)=>{
+        document.getElementById("asdfjkl").innerHTML = "value: "+document.getElementById("iframe1").contentWindow.location.href;
+        document.getElementById("asdfjkl2").innerHTML = event.clientX;
+      });
+    </script>
+  </div>
+</div>
+<!--</div>-->
+</body>
+</html>
